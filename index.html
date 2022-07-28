@@ -10,6 +10,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Font-awesome -->
   <script src="https://kit.fontawesome.com/7bea648afd.js" crossorigin="anonymous"></script>
+  <style>
+    @media screen and(max-width: 576px) {
+      .responsive{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
   <title>EduTech</title>
 </head>
 
@@ -21,35 +29,36 @@
       <div class="container-fluid">
         <a class="navbar-brand p-2 fw-bold fs-4 text-secondary" href="#">Edu Tech</a>
         <div class="d-flex flex-lg-row flex-md-row-reverse">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-          <div class="d-flex ps-3" style="margin-right: 200px;">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item ps-3">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item ps-3">
-                <a class="nav-link" href="#">Course</a>
-              </li>
-              <li class="nav-item ps-3">
-                <a class="nav-link" href="#">Deals</a>
-              </li>
-              <li class="nav-item ps-3">
-                <a class="nav-link" href="#">Success</a>
-              </li>
-              <li class="nav-item ps-3">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item ps-3">
-                <a class="nav-link" href="#">Register</a>
-              </li>
-            </ul>
+            <div class="d-flex ps-3" style="margin-right: 200px;">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ps-3">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link" href="#">Course</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link" href="#">Deals</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link" href="#">Success</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item ps-3">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="d-none d-sm-block d-sm-none d-md-block p-3">
+          <div class="d-none d-sm-block d-sm-none d-md-block p-3">
             <a href="" class="btn btn-light text-primary border-primary fw-bold">Register</a>
           </div>
         </div>
@@ -121,16 +130,18 @@
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
           at its layout.</p>
       </div>
-      <div class="row gap-3" id="responsive">
+      <div class="row gap-3 justify-content-center">
         <div class="card justify-content-center" style="max-width: 540px;">
-          <div class="row g-0 border shadow bg-body rounded">
-            <div class="col col-lg-4 col-md-4">
+          <div class="row g-0 border shadow bg-body rounded responsive">
+            <div class="col col-sm-12 col-md-4 col-lg-4">
               <img src="./images/course/courses-1.png" class=" img-fluid w-100 h-100 rounded-start" alt="...">
             </div>
-            <div class="col col-lg-8 col-md-8">
+            <div class="col col-sm-12 col-md-8 col-lg-8">
               <div class="card-body">
                 <h5 class="card-title">Fundamental Of UI/UX Design</h5>
-                <p class="card-text">Based on the user research, UX/UI designers create user personas that explore in more depth the particular tasks every persona wants to perform and why. A typical persona includes demographic data.</p>
+                <p class="card-text">Based on the user research, UX/UI designers create user personas that explore in
+                  more depth the particular tasks every persona wants to perform and why. A typical persona includes
+                  demographic data.</p>
                 <span class="fw-bold text-info">Price : 20$</span>
               </div>
             </div>
@@ -144,7 +155,9 @@
             <div class="col col-lg-8 ">
               <div class="card-body">
                 <h5 class="card-title">Javascript Basic to advanced</h5>
-                <p class="card-text">Getting Started with JavaScript Backend Basics The following article is a continuation to my previous article. In this article, we will dive deep into some of the advanced JavaScript concepts that are being used widely in the industry.</p>
+                <p class="card-text">Getting Started with JavaScript Backend Basics The following article is a
+                  continuation to my previous article. In this article, we will dive deep into some of the advanced
+                  JavaScript concepts that are being used widely in the industry.</p>
                 <span class="fw-bold text-info">Price : 150$</span>
               </div>
             </div>
@@ -158,7 +171,9 @@
             <div class="col col-lg-8">
               <div class="card-body">
                 <h5 class="card-title">Fullstack Web Development</h5>
-                <p class="card-text">Learn more about Full Stack Web Development Take a full stack web development course on Udemy and learn this highly in-demand skill. Learn front-end and back-end development and how they interact.</p>
+                <p class="card-text">Learn more about Full Stack Web Development Take a full stack web development
+                  course on Udemy and learn this highly in-demand skill. Learn front-end and back-end development and
+                  how they interact.</p>
                 <span class="fw-bold text-info">Price : 200$</span>
               </div>
             </div>
@@ -170,7 +185,9 @@
               <img src="./images/course/course-4.png" alt="">
               <div class="m-3 pd-3">
                 <h4>Digital Marketing</h4>
-                <p>$13,250 1 week long Starts Aug 14 Business In-Person Digital Marketing Strategy Learn the proven frameworks and foundational tools you need to design, implement, and manage a successful digital marketing.</p>
+                <p>$13,250 1 week long Starts Aug 14 Business In-Person Digital Marketing Strategy Learn the proven
+                  frameworks and foundational tools you need to design, implement, and manage a successful digital
+                  marketing.</p>
                 <span class="fw-bold text-info">Price : 90$</span>
               </div>
             </div>
@@ -182,7 +199,9 @@
               <img src="./images/course/course-5.png" alt="">
               <div class="m-3 pd-3">
                 <h4>Photography Basic Rules</h4>
-                <p>Photography For Beginners - Your Free Course Our beginner photography course will help you understand the basics of light and how your eye fixes lighting. How to get your camera to catch what your eye sees to produce.</p>
+                <p>Photography For Beginners - Your Free Course Our beginner photography course will help you understand
+                  the basics of light and how your eye fixes lighting. How to get your camera to catch what your eye
+                  sees to produce.</p>
                 <span class="fw-bold text-info">Price : 20$</span>
               </div>
             </div>
@@ -194,7 +213,9 @@
               <img src="./images/course/course-6.png" alt="">
               <div class="m-3 pd-3">
                 <h4>Motion Graphics</h4>
-                <p>Course By Kevin Parry Master the technical and creative skills of stop-motion! In this course, Kevin Parry will teach you how to bring any object to life and create visually stunning animated content.</p>
+                <p>Course By Kevin Parry Master the technical and creative skills of stop-motion! In this course, Kevin
+                  Parry will teach you how to bring any object to life and create visually stunning animated content.
+                </p>
                 <span class="fw-bold text-info">Price : 250$</span>
               </div>
             </div>
@@ -238,6 +259,19 @@
     </section>
     <!-- about-section-end -->
     <!-- register-section-start -->
+    <section class="d-flex mt-5 p-4 bg-primary justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-sm-12 col-lg-3 col-md-8">
+          <h1>Ready to join?</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-3 col-md-4">
+          <a href="" class="btn btn-light text-primary">Register Now</a>
+        </div>
+      </div>
+    </section>
     <!-- register-section-end -->
     <!-- Student-section-start -->
     <section class="mt-5">
